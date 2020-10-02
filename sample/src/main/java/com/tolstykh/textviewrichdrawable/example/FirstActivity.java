@@ -23,8 +23,11 @@ public class FirstActivity extends AppCompatActivity {
         binding = ActivityFirstBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
-        binding.textView.getmRichDrawableHelper().setmDrawableStartHeight(72);
-        binding.textView.getmRichDrawableHelper().setmDrawableStartWidth(72);
+        binding.textView.getmRichDrawableHelper().setAllSame(true);
+        binding.textView.getmRichDrawableHelper().setDefaultDrawableHeight(24);
+        binding.textView.getmRichDrawableHelper().setDefaultDrawableHeight(24);
+        //binding.textView.getmRichDrawableHelper().setmDrawableStartHeight(24);
+        //binding.textView.getmRichDrawableHelper().setmDrawableStartWidth(24);
         binding.textView.setDrawableStartVectorId(R.drawable.ic_baseline_arrow_forward_ios_24);
     }
 }

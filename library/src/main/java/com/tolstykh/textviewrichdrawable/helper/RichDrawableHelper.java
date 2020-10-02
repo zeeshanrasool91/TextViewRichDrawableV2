@@ -36,7 +36,7 @@ public class RichDrawableHelper implements DrawableEnriched {
     }
 
     public void setmDrawableStartWidth(int mDrawableStartWidth) {
-        this.mDrawableStartWidth = DensityUtils.dpToPx(mDrawableStartWidth);
+        this.mDrawableStartWidth = DensityUtils.dpToPx(mDrawableStartWidth,mContext);
     }
 
     public int getmDrawableStartHeight() {
@@ -44,7 +44,7 @@ public class RichDrawableHelper implements DrawableEnriched {
     }
 
     public void setmDrawableStartHeight(int mDrawableStartHeight) {
-        this.mDrawableStartHeight = DensityUtils.dpToPx(mDrawableStartHeight);
+        this.mDrawableStartHeight = DensityUtils.dpToPx(mDrawableStartHeight,mContext);
     }
 
     public int getmDrawableEndWidth() {
@@ -52,7 +52,7 @@ public class RichDrawableHelper implements DrawableEnriched {
     }
 
     public void setmDrawableEndWidth(int mDrawableEndWidth) {
-        this.mDrawableEndWidth = DensityUtils.dpToPx(mDrawableEndWidth);
+        this.mDrawableEndWidth = DensityUtils.dpToPx(mDrawableEndWidth,mContext);
     }
 
     public int getmDrawableEndHeight() {
@@ -60,7 +60,7 @@ public class RichDrawableHelper implements DrawableEnriched {
     }
 
     public void setmDrawableEndHeight(int mDrawableEndHeight) {
-        this.mDrawableEndHeight = DensityUtils.dpToPx(mDrawableEndHeight);
+        this.mDrawableEndHeight = DensityUtils.dpToPx(mDrawableEndHeight,mContext);
     }
 
     public int getmDrawableTopWidth() {
@@ -68,7 +68,7 @@ public class RichDrawableHelper implements DrawableEnriched {
     }
 
     public void setmDrawableTopWidth(int mDrawableTopWidth) {
-        this.mDrawableTopWidth = DensityUtils.dpToPx(mDrawableTopWidth);
+        this.mDrawableTopWidth = DensityUtils.dpToPx(mDrawableTopWidth,mContext);
     }
 
     public int getmDrawableTopHeight() {
@@ -76,7 +76,7 @@ public class RichDrawableHelper implements DrawableEnriched {
     }
 
     public void setmDrawableTopHeight(int mDrawableTopHeight) {
-        this.mDrawableTopHeight = DensityUtils.dpToPx(mDrawableTopHeight);
+        this.mDrawableTopHeight = DensityUtils.dpToPx(mDrawableTopHeight,mContext);
     }
 
     public int getmDrawableBottomWidth() {
@@ -84,7 +84,7 @@ public class RichDrawableHelper implements DrawableEnriched {
     }
 
     public void setmDrawableBottomWidth(int mDrawableBottomWidth) {
-        this.mDrawableBottomWidth = DensityUtils.dpToPx(mDrawableBottomWidth);
+        this.mDrawableBottomWidth = DensityUtils.dpToPx(mDrawableBottomWidth,mContext);
     }
 
     public int getmDrawableBottomHeight() {
@@ -92,7 +92,7 @@ public class RichDrawableHelper implements DrawableEnriched {
     }
 
     public void setmDrawableBottomHeight(int mDrawableBottomHeight) {
-        this.mDrawableBottomHeight = DensityUtils.dpToPx(mDrawableBottomHeight);
+        this.mDrawableBottomHeight = DensityUtils.dpToPx(mDrawableBottomHeight,mContext);
     }
 
     public void setAllSame(boolean allSame) {
@@ -155,7 +155,7 @@ public class RichDrawableHelper implements DrawableEnriched {
     }
 
     public void setDefaultDrawableWidth(int defaultDrawableWidth) {
-        this.defaultDrawableWidth = DensityUtils.dpToPx(defaultDrawableWidth);
+        this.defaultDrawableWidth = DensityUtils.dpToPx(defaultDrawableWidth,mContext);
     }
 
     public int getDefaultDrawableHeight() {
@@ -163,7 +163,7 @@ public class RichDrawableHelper implements DrawableEnriched {
     }
 
     public void setDefaultDrawableHeight(int defaultDrawableHeight) {
-        this.defaultDrawableHeight = DensityUtils.dpToPx(defaultDrawableHeight);
+        this.defaultDrawableHeight = DensityUtils.dpToPx(defaultDrawableHeight,mContext);
     }
 
     private int defaultDrawableWidth;
