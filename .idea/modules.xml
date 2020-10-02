@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TextViewRichDrawableV2.iml" filepath="$PROJECT_DIR$/.idea/modules/TextViewRichDrawableV2.iml" group="TextViewRichDrawableV2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/library.iml" group="TextViewRichDrawableV2/library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/sample.iml" group="TextViewRichDrawableV2/sample" />
+    </modules>
+  </component>
+</project>
