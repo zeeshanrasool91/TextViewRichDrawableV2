@@ -1,0 +1,57 @@
+repositories {
+    jcenter()
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
+
+    defaultConfig {
+        applicationId "com.tolstykh.textviewrichdrawable"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+    // The default value for each feature is shown below. You can change the value to
+    // override the default behavior.
+    buildFeatures {
+        // Determines whether to generate a BuildConfig class.
+        buildConfig = true
+        // Determines whether to support View Binding.
+        // Note that the viewBinding.enabled property is now deprecated.
+        viewBinding = true
+        // Determines whether to support Data Binding.
+        // Note that the dataBinding.enabled property is now deprecated.
+        dataBinding = false
+        // Determines whether to generate binder classes for your AIDL files.
+        aidl = false
+        // Determines whether to support RenderScript.
+        renderScript = false
+        // Determines whether to support injecting custom variables into the module's R class.
+        resValues = true
+        // Determines whether to support shader AOT compilation.
+        shaders = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation project(path: ':library')
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+}
